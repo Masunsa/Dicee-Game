@@ -23,8 +23,14 @@ var image2 = document.querySelectorAll("img")[1];
 image2.setAttribute("src", randomImageSource2);
 
 if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").innerHTML = "Спорщик 1 победил"
-} else
+  document.querySelector("h1").innerHTML = "Спорщик 1 победил";
+}
+
+else if (randomNumber2 > randomNumber1)
 {
-  document.querySelector("h1").innerHTML = "Спорщик 2 победил"
+  document.querySelector("h1").innerHTML = "Спорщик 2 победил";
+}
+
+else  {
+  document.querySelector("h1").innerHTML = "Ничья";
 }
